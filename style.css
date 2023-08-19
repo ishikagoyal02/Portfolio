@@ -1,0 +1,171 @@
+/* body{
+    background-image: url("/images/bg.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+} */
+
+.p1 {
+    font-family: system-ui;
+    font: optional;
+  }
+
+.p1 :hover{
+    font-style: bol;
+}
+  
+  .p2 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .p3 {
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+body{
+    margin: 0%;
+    
+}
+
+.nav-list
+{
+    margin:0%;
+    display: flex;
+    justify-content: center;
+    background-color: black ;
+}
+
+.nav-list li{
+    list-style: none;      /*bullet remove*/
+    padding:23px;
+    font-size: 1.3rem;
+    
+    
+}
+
+.nav-list li a{
+    text-decoration: none;    /* line under hyperlink remove*/
+    color: white;
+}
+
+.nav-list li a:hover
+{
+    color:blue;
+    text-shadow: 1rem;
+}
+
+.background
+{
+    background: rgb(0,0,0,0.2) url("./images/bg.jpg");
+    background-size: cover;
+    background-blend-mode:darken;
+}
+
+.main-content{
+    color: aliceblue;
+    justify-content: left;  
+    text-align: right;
+    
+}
+
+
+
+.text
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    /* margin-top: 3rem; */
+}
+.hi
+{
+    
+    font-size: 3rem;
+    /* background-color: blue; */
+}
+.minPhase
+{
+    font-size: 2.4rem;
+    border:0 transparent;                           /*bcoz startPhase(hi) and this class content is not displaying on same hor*/
+    padding: 17px;                                  /* then i make box on this class content then using padding adjust it*/
+}
+
+
+.line
+{
+    border:2.5px solid whitesmoke;
+    width: 35%;
+    margin-bottom: 6px;
+}
+
+.line1
+{
+    border:2.5px solid whitesmoke;
+    width: 25%;
+}
+.intro
+{
+    display: flex;
+    justify-content: center;
+    border: 0 transparent;
+}
+.introtext
+{
+    /* background-color: pink; */
+    border: 0 transparent;
+    padding: 10% 11%;
+    font-size: 200%;
+    text-shadow: 1px;
+    font-family: Garamond, serif;
+    /* font-family: "Lucida Console", "Courier New", monospace; */
+}
+
+.introtext:hover{
+    /* text-shadow: 8%; */
+    text-decoration: black;
+    color: cadetblue;
+}
+
+
+.main-photo
+{
+    /* margin-right: 10%;
+    margin-top: 7%; */
+    border: 0 transparent;
+    padding: 9% 4%;
+    /* border: 0.1rem white solid; */
+    border-radius: 100%;
+    width: 22rem;
+    height: 18rem;
+}
+
+.main-photo:hover{
+    padding: 6% 2%;
+    width: 25rem;
+    height: 22rem;
+}
+@media only screen and (min-width:275px) and (max-width:800px)
+{
+
+    .nav-list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;           
+        opacity: 0.8;
+        padding: 0.7rem;
+        font-size: 0.4rem;
+        /* margin: top 2%;
+        margin-right:2rem; */
+    }
+
+    .minPhase .hi{
+        font-size: auto;
+    }
+    
+    
+    .main-photo{
+        width: 30%;
+        height: 27%;
+        margin-top: 2rem;
+    }
+}
